@@ -1,0 +1,27 @@
+/* hidden from ui*/
+#main-sidebar ul.nav-sidebar:nth-child(2){ display: none; }
+
+#main-sidebar ul.nav.nav-pills li:nth-child(1n + 13) {
+    display: none;
+}
+.dropdown-menu li:nth-child(1n + 6) {
+    display: none;
+}
+.main-right-sidebar ul[data-hook ="admin_product_tabs"] li:nth-child(2) {
+    display: none;
+}
+/* ./ hidden from ui*/
+
+legend#stock-location-source {
+    background-color: #ff929285;
+    padding: 2% 0% 2% 1%;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+legend#stock-location-destination {
+    background-color: #3ce28e7a;
+    padding: 2% 0% 2% 1%;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
