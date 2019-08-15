@@ -4,12 +4,12 @@
     <% cache(taxon.present? ? [I18n.locale, current_currency, taxon, product] : cache_key_for_product(product)) do %>
       <div class="panel-body text-center product-body">
         <%= link_to url, itemprop: "url" do %>
-          <%# small_image(product, itemprop: "image") %><br/>
+          <%# small_image(product, itemprop: "image") %>
           <%# image_tag '' %>
           <%= image_tag product.image_url.to_s %>
           <%= content_tag(:span, truncate(product.name, length: 50), class: 'info', itemprop: "name", title: product.name) %>
         <% end %>
-        <br/>
+        
       </div>
       <div class="panel-footer text-center">
         <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
