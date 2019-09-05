@@ -45,3 +45,20 @@ ul.nav.nav-sidebar:nth-child(2) {
 a.cart-info {
     color: black !important;
 }
+/*sidebar menu items on hover*/
+a.list-group-item:hover, a.list-group-item:focus{
+    background-color: none !important; 
+    background-image: linear-gradient(#fff 90%, #00c6e638) !important;
+    text-indent: 1% !important;
+}
+
+.list-group-item.active:hover, .list-group-item.active:focus {
+    color: #1c5c92 !important;
+    letter-spacing: 1.5px;
+}
+
+.list-group-item.active{
+    background-color: #00c6e6;
+    letter-spacing: 1.5px;
+}
+}
